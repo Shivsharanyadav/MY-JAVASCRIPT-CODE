@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Button with javascript</title>
+    <style>
+        .my_bag{
+            background-color:greenyellow;
+            border: 2px solid black;border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .bag{
+          background-color: ;  
+          border: 2px solid black;border-radius: 10px;
+          padding: 5px;
+          margin: 5px;
+}
+    </style>
+    <script>
+        var bag = 0;
+        var move_to_wish = 0;
+        var sale_item =0;
+        function add_to_bag(){
+            bag = bag + 1;
+            console.log( "bag" +bag);
+        }
+        function move_to_wishlist(){
+            move_to_wish = move_to_wish + 1;
+            console.log(move_to_wish);
+            bag = bag-1;
+            console.log("bag" +bag);
+
+        }
+        function add_sale_item(){
+            sale_item = sale_item + 1;
+            console.log(sale_item);
+            bag = bag + 2;
+            console.log( "bag" +bag);
+        }
+        // function remove_to_bag{
+        //     bag = bag - 1;
+        //     console.log(bag);
+        // }
+
+
+    </script>
+</head>
+<body>
+    <button class="my_bag" onclick="add_to_bag()">Add to Bag</button>
+    <button class="bag" onclick="move_to_wishlist()">Move to wishlist</button>
+    <button class="my_bag" onclick="add_sale_item()">Add 1 + 1 sale item</button>
+    
+</body>
+</html>
